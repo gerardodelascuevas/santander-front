@@ -20,6 +20,8 @@ body{
   top: 0;
   left: 0;
   right: 0;
+  bottom: 10;
+  display: inline;
 }
 .header {
     margin: 40px 20px 0 20px;
@@ -45,17 +47,18 @@ body{
   
   .navbar {
     width: 70%;
-    text-align: left;
+    text-align: center;
     color: #025157;
     font-family: sans-serif;
     
   }
   
   .actions {
-    width: 15%;
-    text-align: left;
+    width: 15%; 
+    text-align: right;
     font-size: 14px;
-    padding: 10px;
+    padding: 0px;
+    float: right;
     }
     .actions a{
         color: #67b54b;
@@ -73,6 +76,11 @@ body{
         background-color: #67b54b;
         padding: 12px 14px 12px 14px;
         border-radius: 5px;
+    }
+    /*ajustando el formulario*/
+    .formulario__etiqueta{
+      display: block;
+      
     }
     /* aca va el apartado publicitario*/
     .publicidad__contenedor{

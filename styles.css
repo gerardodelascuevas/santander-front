@@ -86,6 +86,7 @@ body{
     .publicidad__contenedor{
       display: flex;
       gap: 2rem;
+      margin-left: 25%;
       /*width: 70%;
       margin: 100% auto;
       align-items: center; */
@@ -99,11 +100,89 @@ body{
     .publicidad__video p{
       color: black;
     }
+    .publicidad__contenedor video{
+      width: 50%;
+      
+    }
     .texto__claro{
       font-size: smaller;
       color: grey;
     }
     .publicidad__imagen__pequeña{
       width: 15%;
+      margin-left: 25%;
+    }
+    /* colocando la seccion quien usa matcha*/
+    .quien_usa_matcha{
+      background-color: #a1d683;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .quien_usa_matcha h3{
+      color: rgb(33, 95, 69);
+      font-size: 3rem;
+      font-family: alegreya;
+    }
+    .quien_usa_matcha h5{
+      color: cadetblue;
+      font-size: larger;
       
     }
+    .quien_usa_matcha p{
+      color: black;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    .quien_usa_matcha__carrusel{
+      float: right;
+      background-color: white;
+      padding: 3.5rem;
+      border-radius: 2rem;
+      width: 40%;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      margin-right: 15rem;
+    }
+    .quien_usa_matcha__carrusel img{
+      width: 100%;
+      margin: 0 0 1rem 0rem ;
+          }
+          .quien_usa_matcha button{
+            position: absolute;
+            margin-top: -5px;
+          }
+    #everly__logo{
+      float: right;
+      width: 30%;
+      background-color: rgb(255, 230, 0);
+      padding: 2rem;
+      border-radius: 50%;
+      margin-top: -5rem;
+     position: relative;
+    }
+    #usuarios_matcha{
+      max-width: 70%;
+    }
+    .caso_estudio{
+      color: white;
+      background-color: blue;
+
+    }
+    #texto__claro__casos{
+      color: gray;
+
+    }
+    #carrito__texto{
+      display: flex;
+      gap: 2.5rem;
+    }
+    #carrito{
+      width: 15%;
+    
+    }
+    #usuarios_matcha{
+      margin: 3rem 1rem auto 3.5rem;
+    }
+    

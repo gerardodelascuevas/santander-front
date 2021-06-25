@@ -22,6 +22,7 @@ body{
   right: 0;
   bottom: 10;
   display: inline;
+  overflow: hidden;
 }
 .header {
     margin: 40px 20px 0 20px;
@@ -77,9 +78,13 @@ body{
         padding: 12px 14px 12px 14px;
         border-radius: 5px;
     }
+    main{
+      margin-top: 15rem;
+      text-align: center;
+    }
     /*ajustando el formulario*/
     .formulario__etiqueta{
-      display: block;
+      display: block !important;
       
     }
     /* aca va el apartado publicitario*/
@@ -99,6 +104,7 @@ body{
     }
     .publicidad__video p{
       color: black;
+      padding: 2rem;
     }
     .publicidad__contenedor video{
       width: 50%;
@@ -109,8 +115,12 @@ body{
       color: grey;
     }
     .publicidad__imagen__pequeña{
-      width: 15%;
+      width: 10%;
       margin-left: 25%;
+      position: absolute;
+      margin-top: 22rem;
+      margin-right: 75rem;
+      margin-left: 3rem;
     }
     /* colocando la seccion quien usa matcha*/
     .quien_usa_matcha{
@@ -155,12 +165,18 @@ body{
           }
     #everly__logo{
       float: right;
-      width: 30%;
       background-color: rgb(255, 230, 0);
       padding: 2rem;
       border-radius: 50%;
       margin-top: -5rem;
      position: relative;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    width: 2.5rem;
+    height: 2.5rem;
+     
     }
     #usuarios_matcha{
       max-width: 70%;
@@ -185,4 +201,78 @@ body{
     #usuarios_matcha{
       margin: 3rem 1rem auto 3.5rem;
     }
-    
+    .features{
+      display: grid;
+       /*grid-template-columns: 300px 300px;
+     grid-template-columns: 500px, 1fr;
+     grid-template-columns: 1fr, 1fr;
+      grid-template-columns: repeat(2, 300px);*/
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat (2, 330px);
+      max-width: 100%;
+      height: 45rem;
+      background-color: rgb(30, 81, 105);
+      margin-top: 3.5rem;
+      padding: 8rem 4rem;
+
+      justify-content: start;
+      align-items: end;
+      
+      
+    }
+
+    .feature-art{
+      display: grid;
+      grid-template-columns: 80% 20%;
+      grid-template-rows: 20% 80%;
+      background-color: white;
+      margin: 0px;
+      width: 40rem;
+      height: 20rem;
+      position: relative;
+      overflow: hidden;
+      font-family: sans-serif;
+     
+          }
+    .features__art__logo{
+      width: 4rem;
+      height: 4rem;
+       position: relative;
+       margin-top: 1rem;
+       margin-left: 2rem;
+      
+    }
+    .features__art__img{
+      width: 8rem;
+      height: 14rem;
+      position: relative;
+      align-items: center;
+      margin-top: 4rem;
+      margin-left: 2rem;
+               }
+    .features__art__text{
+      position: relative;
+      margin-top: 2rem;
+      margin-left: 2rem;
+    }
+    /*.features__art__a{
+      color: green;
+      background-color: red;
+    }*/
+    .feature-art a{
+      color: green;
+    }
+    footer a{
+      font-family: brush script mt;
+      color: green;
+      font-size: 2rem;
+      text-decoration: none;
+      }
+     footer{
+      text-align: right;
+      background-color: greenyellow;
+    }
+    footer :hover{
+      color: honeydew;
+      background-color: gold;
+    }

@@ -83,9 +83,15 @@ body{
     }
     /*ajustando el formulario*/
     .formulario__etiqueta{
-      display: block !important;
+      display: grid;
+      margin: 0 auto;
       
     }
+    .formulario input{
+      max-width: 60%;
+    }
+
+   
     /* aca va el apartado publicitario*/
     .publicidad__contenedor{
       display: flex;
@@ -281,6 +287,7 @@ body{
 
     .how-does-matcha-work{
       background-color: rgb(250, 242, 242); 
+     
     }
 
         #how-does-match-work-container{
@@ -351,3 +358,153 @@ body{
     .how-does-matcha-work button{
       font-weight: bold;
     }
+
+    /** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+  .navbar, .actions{
+    display: none;
+      }
+      main h1{
+        font-size: 30px;
+        text-align: center;
+              }
+      main{
+        margin-top: 150px;
+            }
+            main img{
+              max-width: 100%;}
+              .features{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                margin: 0 0 10px 0;
+                padding: 0;
+               
+              }
+              .feature-art{
+                width: 80%;
+                height: 80%;
+                margin-left: 45px;
+                font-size: 8px;
+                gap: 5px;
+                margin-bottom: 10px;
+              }
+              .feature-art h2{
+                margin-top: -10px;
+              }
+              .features__art__logo{
+                max-width: 20px;
+                max-height: 20px;
+                
+              }
+              .features__art__img{
+                  display: none;
+              }
+          .publicidad__contenedor{
+            display: inline-block;
+            margin-left: 10px;
+          }
+          .publicidad__contenedor video{
+            width: 90%;
+            height: 200px;
+                      }
+          .publicidad__contenedor p{
+            margin-top: -30px;
+          }
+}
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+  main img{
+    max-width: 100%;
+  }
+  .features{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 0 0 10px 0;
+    padding: 0;
+   
+  }
+  .feature-art{
+    width: 80%;
+    height: 80%;
+    margin-left: 45px;
+    font-size: 8px;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  .feature-art h2{
+    margin-top: -10px;
+  }
+  .features__art__logo{
+    max-width: 20px;
+    max-height: 20px;
+    
+  }
+  .features__art__img{
+      display: none;
+  }
+  .publicidad__contenedor{
+    display: inline-block;
+  }
+  .publicidad__contenedor video{
+    width: 500px;
+    height: 400px;
+                      
+  }
+    
+  
+}
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  main img{
+    max-width: 100%;       
+  }
+  .publicidad__contenedor{
+    display: inline-block;
+    margin-left: 50px;
+  }
+  .publicidad__contenedor video{
+    width: 500px;
+    height: 400px;}
+    .publicidad__contenedor p{
+      margin-top: -20px;
+    }
+                
+  .features{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 0 0 10px 0;
+    padding: 0;
+   
+  }
+  .feature-art{
+    width: 80%;
+    height: 80%;
+    margin-left: 45px;
+    font-size: 10px;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  .feature-art h2{
+    margin-top: 0;
+    font-size: 15px;
+  }
+  .features__art__logo{
+    max-width: 45px;
+    max-height: 45px;
+    
+  }
+  .features__art__img{
+      margin-top: -15px;
+      margin-right: 0;
+  }
+
+}
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+}             
